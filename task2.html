@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pupies</title>
+</head>
+<body>
+
+<script>
+
+    var reaction = ["Чего так мало?", "Более чем достаточно.", "Почему их так много?", "Ого, 101 далматинец!"];
+
+    var x = function howManyAnimals (number) {
+        if (number <= 10) {
+            return reaction[0];
+        }
+        if (number <= 50) {
+            return reaction[1];
+        }
+        if (number <= 100) {
+            return reaction[2];
+        }
+        if (number == 101) {
+            return reaction[3] + " " + reaction[2];
+        }
+        else {
+            return reaction[2];
+        }
+    };
+
+    alert(x(101));
+
+
+</script>
+
+
+</body>
+</html>
